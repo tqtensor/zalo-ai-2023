@@ -1,0 +1,22 @@
+[tool.poetry]
+authors = ["tqtensor <victortang212@gmail.com>"]
+description = ""
+name = "zalo-ai-2023"
+packages = [{include = "zalo_ai_2023"}]
+readme = "README.md"
+version = "0.1.0"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+torch = "^2.1.0"
+transformers = "^4.35.0"
+
+[tool.poetry.group.dev.dependencies]
+jupyterlab = "==2.*"
+nbqa = {extras = ["toolchain"], version = "^1.7.0"}
+pre-commit = "^2.20.0"
+toml-sort = "^0.23.0"
+
+[build-system]
+build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core"]
